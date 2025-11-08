@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+
+# custom
+dev/
+dist-*/
+.DS_Store
+*.zip
+package-lock.json

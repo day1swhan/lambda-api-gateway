@@ -1,0 +1,43 @@
+{
+  "version": "0.8.2",
+  "name": "@day1swhan/lambda-api-gateway",
+  "description": "Lightweight Express-style router for AWS Lambda",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/day1swhan/lambda-api-gateway.git"
+  },
+  "author": "day1swhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/day1swhan/lambda-api-gateway/issues"
+  },
+  "homepage": "https://github.com/day1swhan/lambda-api-gateway#readme",
+  "exports": {
+    ".": {
+      "import": "./dist-es/index.js",
+      "require": "./dist-cjs/index.js",
+      "types": "./dist-types/index.d.ts"
+    }
+  },
+  "main": "./dist-cjs/index.js",
+  "module": "./dist-es/index.js",
+  "types": "./dist-types/index.d.ts",
+  "files": [
+    "dist-cjs",
+    "dist-es",
+    "dist-types"
+  ],
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:es": "tsc -p tsconfig.es.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build": "npm run build:cjs && npm run build:es && npm run build:types",
+    "clean": "rm -rf dist-*",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.157",
+    "@types/node": "^22",
+    "typescript": "^5"
+  }
+}
