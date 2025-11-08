@@ -28,6 +28,8 @@ export const handler = app.export().handler;
 - **미들웨어 지원** – 체이닝 가능한 함수형 미들웨어로 요청 흐름 제어
 - **자동 파싱** – 쿼리스트링, 쿠키를 기본 파싱하여 바로 사용 가능
 
+Router, Middleware, Handler 요소들이 내부적으로 어떻게 구성되어서 작동하는지 궁금하신 분들은 [Cloudflare Workers로 Express.js 스타일 API Gateway 프레임워크 개발기](https://blog.day1swhan.com/articles/cf-worker-api-gateway?utm_source=github.com&utm_medium=referral)를 참조해 주시기 바랍니다
+
 ## Install
 
 ```sh

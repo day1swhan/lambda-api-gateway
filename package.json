@@ -1,5 +1,5 @@
 {
-  "version": "0.8.2",
+  "version": "0.8.4",
   "name": "@day1swhan/lambda-api-gateway",
   "description": "Lightweight Express-style router for AWS Lambda",
   "repository": {
@@ -39,5 +39,13 @@
     "@types/aws-lambda": "^8.10.157",
     "@types/node": "^22",
     "typescript": "^5"
-  }
+  },
+  "keywords": [
+    "aws-lambda",
+    "lambda-url",
+    "router",
+    "microframework",
+    "lightweight",
+    "http"
+  ]
 }
